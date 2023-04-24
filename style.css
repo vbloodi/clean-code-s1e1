@@ -4,15 +4,18 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header img {
   width: 100%;
 }
+
 .header .header__link {
   font-family: fantasy, cursive;
 }
@@ -22,6 +25,7 @@
     text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
