@@ -167,11 +167,11 @@ button.delete img:hover {
   display: none;
 }
 
-.list .list__item.edit-mode input[type='text'] {
+.list .list__item.list__item_edit-mode input[type='text'] {
   display: inline-block;
   width: 224px;
 }
 
-.list .list__item.edit-mode label {
+.list .list__item.list__item_edit-mode label {
   display: none;
 }
