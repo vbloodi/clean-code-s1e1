@@ -13,7 +13,7 @@
   text-align: right;
 }
 
-.header img {
+.header .header__img {
   width: 100%;
 }
 
@@ -33,15 +33,17 @@
   margin: 0 auto 0;
 }
 
-.task {
+.list__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row__wrapper {
+.new-task__section {
   display: flex;
 }
+
+/* Style reset */
 
 ul {
   margin: 0;
@@ -58,7 +60,9 @@ button {
   outline: none;
 }
 
-button {
+/* Button Styles */
+
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -68,14 +72,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 
-h3,
-label[for='new-task'] {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +88,7 @@ label[for='new-task'] {
   text-transform: uppercase;
 }
 
-input[type='text'] {
+.list__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,18 +101,18 @@ input[type='text'] {
   color: #888;
 }
 
-input[type='text']:focus {
+.list__input:focus {
   color: #333;
 }
 
 /* New Task */
 
-label[for='new-task'] {
+.title__new-task {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.new-task__input {
   width: 318px;
 }
 
@@ -119,7 +122,6 @@ label[for='new-task'] {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,45 +131,45 @@ label[for='new-task'] {
   vertical-align: middle;
 }
 
-.list__item > input[type='checkbox'] {
+.list__item > .list__checkbox {
   margin: 0 10px;
 }
 
-.list__item > label {
+.list__item > .list__text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list__item > input[type='text'] {
+.list__item > .list__input {
   width: 226px;
 }
 
-button.delete img {
+.button.delete .list__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button.delete .list__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks label {
+.list__completed .list__text {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.list .list__item input[type='text'] {
+.list .list__item .list__input {
   display: none;
 }
 
-.list .list__item.list__item_edit-mode input[type='text'] {
+.list .list__item.list__item_edit-mode .list__input {
   display: inline-block;
   width: 224px;
 }
